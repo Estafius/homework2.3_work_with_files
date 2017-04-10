@@ -10,7 +10,8 @@ def input_function(files,input_string):
     for line in original_file.readlines():
         if input_string in line:
          file_list.append(file)
-  return list(dict.fromkeys(file_list))
+         break
+  return file_list
 
 def main():
  os.chdir('Migrations')
